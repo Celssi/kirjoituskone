@@ -1,0 +1,33 @@
+@import "colors";
+
+.App {
+    text-align: center;
+    background-color: $primary-color;
+    height: 100vh;
+}
+
+.App-container {
+    padding: 20px;
+}
+
+.App-goalAchieved * {
+    color: $success-color !important;
+}
+
+.App-inDanger * {
+    color: $danger-color !important;
+}
+
+.App-inDanger {
+    animation: blur 4s ease-in 0s infinite;
+}
+
+@keyframes blur {
+    0%,
+    90% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(150px);
+    }
+}
